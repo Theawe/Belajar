@@ -3,6 +3,5 @@
     <string name="speed_controller">Speed Controller</string>
     <string name="speed">Speed</string>
     <string name="lights">LIGHTS</string>
-    <string name="on">ON</string>
-    <string name="off">OFF</string>
+    <string name="fan">FAN</string>
 </resources>

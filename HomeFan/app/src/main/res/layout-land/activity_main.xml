@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginEnd="484dp"
         android:text="@string/lights"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +31,8 @@
         style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="150dp"
         android:layout_height="17dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="484dp"
         android:max="3"
         android:progress="0"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,11 +43,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/speed"
         app:layout_constraintEnd_toStartOf="@+id/speedBar"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
 
@@ -58,9 +58,10 @@
         android:contentDescription="@string/fan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636"
+        app:layout_constraintVertical_bias="0.325"
         app:srcCompat="@drawable/fan" />
 
     <ToggleButton
