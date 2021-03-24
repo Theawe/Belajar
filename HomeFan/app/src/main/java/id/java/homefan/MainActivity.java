@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(toggleButton.isChecked()){
+                if(isChecked){
                     rotateAnimator.setDuration(SPEED[seekBar.getProgress()]);
                     rotateAnimator.start();
                     Log.d("rotate","rotate start");
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         switchButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(switchButton.isChecked()){
+                if(isChecked){
                     gd.setColors(new int[]{ Color.YELLOW , Color.TRANSPARENT });
                     imageView.setBackground(gd);
                     Log.d("light","light on");
@@ -89,13 +89,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
     }
-
-
-
 
 
 }
