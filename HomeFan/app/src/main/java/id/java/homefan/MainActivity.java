@@ -7,7 +7,6 @@ import android.animation.ValueAnimator;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.animation.LinearInterpolator;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
@@ -50,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 if(isChecked){
                     rotateAnimator.setDuration(SPEED[seekBar.getProgress()]);
                     rotateAnimator.start();
-                    Log.d("rotate","rotate start");
                 }else{
                     rotateAnimator.end();
-                    Log.d("rotate","rotate stop");
                 }
             }
         });
@@ -64,10 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 if(isChecked){
                     gd.setColors(new int[]{ Color.YELLOW , Color.TRANSPARENT });
                     imageView.setBackground(gd);
-                    Log.d("light","light on");
                 }else{
                     imageView.setBackgroundColor(Color.TRANSPARENT);
-                    Log.d("rotate","light off");
                 }
             }
         });
